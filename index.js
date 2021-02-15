@@ -112,6 +112,27 @@ inquirer
         message: 'What is your email address?'
 
     },
-]).then((answers)=> {
-    console.log(answers);
+]).then((responses)=> {
+    console.log(responses);
 })
+
+// //logic for the licensing
+
+// Apache:
+// [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+// GNU: 
+// [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+// MIT: 
+// [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+// BSD:[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
+// Unlicense: 
+// [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+
+//logic for no license
+
+//logic for technologies used
+
+//logic for blank answers

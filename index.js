@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const answers = [];
 
 inquirer
     .prompt ([
@@ -45,6 +46,12 @@ inquirer
         choices: ['Apache', 'GNU', 'MIT', 'BSD', 'Unlicense']
     },
     {
+        type: 'checkbox',
+        message: 'What technologies did you use?',
+        name: 'tech',
+        choices: ['HTML', 'CSS', 'Javascript', 'jQuery', 'Node.js', 'AJAX', 'JSON']
+    },
+    {
         type: 'input',
         name: 'github',
         message: 'What is your Github username?'
@@ -56,9 +63,7 @@ inquirer
         message: 'What is your email address?'
 
     },
-
-
-
-
-
-    ])
+]).then((data)=> {
+    this.data.answers.push
+    console.log(answers);
+})

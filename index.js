@@ -2,6 +2,8 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateREADME = (answers) =>
 `#${answers.appTitle}:
+##${answers.license}
+
 ##Table of Contents:
 <ol>
 <li><a href="#description">Description</a></li>

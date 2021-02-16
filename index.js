@@ -35,9 +35,9 @@ ${answers.install}
 ${answers.usage}
 
 ## Contributing:
-${ansers.cont}
+${answers.cont}
 
-##Testing:
+## Testing:
 ${answers.test} 
 
 ## Questions:
@@ -86,7 +86,7 @@ inquirer
     },
     {
         type: 'input',
-        name: 'tests',
+        name: 'test',
         message: 'Give the testing instructions for your app'
 
     },
@@ -114,8 +114,11 @@ inquirer
         message: 'What is your email address?'
 
     },
-]).then((responses)=> {
-    console.log(responses);
+]).then((answers)=> {
+    const readmeContent =
+    generateREADME(answers);
+
+    fs.writeFile('README.md', readmeContent, (err) => err ? console.log(err) : console.log('Successfully created README.md!'))
 })
 
 // //logic for the licensing

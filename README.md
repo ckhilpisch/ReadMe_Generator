@@ -1,11 +1,10 @@
-#README.Generator:
-##MIT
+#  a:
+##  
 
-##Table of Contents:
+## Table of Contents:
 <ol>
 <li><a href="#description">Description</a></li>
 <li><a href="#installation">Installation</a></li>
-<li><a href="#techologies">Technologies Used</a></li>
 <li><a href="#usage">Usage</a></li>
 <li><a href="#contributing">Contributing</a></li>
 <li><a href="#testing">Testing</a></li>
@@ -14,36 +13,27 @@
 </ol>
 
 ## Description:
-The application takes in information from the user via node by way of prompts created to ask specific questions of the user
+a
 
-##Installation:
-One must use the index.js via node and answer the questions
-
-## Technologies:
-<ul>
-    <li>CSS
-    <li>Node.js
-    <li>AJAX
-    <li>JSON
-    <li>undefined
-</ul>
+## Installation:
+a
 
 ## Usage: 
-It is used to help users create a README quickly and proficiently
+a
 
 ## Contributing:
-n/a
+a
 
 ## Testing:
-undefined 
+a 
 
 ## Questions:
 Have any questions about the app?  Check out my Github Site:
 
-www.github.com/ckhilpisch
+www.github.com/a
 
 Feel free to drop me a line:
-<a class="link" href="mailto:ckhilpisch@gmail.com">ckhilpisch@gmail.com</a>
+<a class="link" href="mailto:a">a</a>
 
 ## License:
-Distributed under the MIT license.
+Distributed under the Apache,GNU,MIT,BSD,Unlicense license.

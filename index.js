@@ -1,14 +1,14 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateREADME = (answers) =>
-`#${answers.appTitle}:
-##${answers.license}
 
-##Table of Contents:
+const generateREADME = (answers) =>
+`#  ${answers.appTitle}:
+##  
+
+## Table of Contents:
 <ol>
 <li><a href="#description">Description</a></li>
 <li><a href="#installation">Installation</a></li>
-<li><a href="#techologies">Technologies Used</a></li>
 <li><a href="#usage">Usage</a></li>
 <li><a href="#contributing">Contributing</a></li>
 <li><a href="#testing">Testing</a></li>
@@ -19,17 +19,8 @@ const generateREADME = (answers) =>
 ## Description:
 ${answers.descript}
 
-##Installation:
+## Installation:
 ${answers.install}
-
-## Technologies:
-<ul>
-    <li>${answers.tech[0]}
-    <li>${answers.tech[1]}
-    <li>${answers.tech[2]}
-    <li>${answers.tech[3]}
-    <li>${answers.tech[4]}
-</ul>
 
 ## Usage: 
 ${answers.usage}
@@ -50,7 +41,6 @@ Feel free to drop me a line:
 
 ## License:
 Distributed under the ${answers.license} license.`
-
 
 
 inquirer
@@ -95,12 +85,7 @@ inquirer
         message: 'What is the license for your application?',
         name: 'license',
         choices: ['Apache', 'GNU', 'MIT', 'BSD', 'Unlicense']
-    },
-    {
-        type: 'checkbox',
-        message: 'What technologies did you use?',
-        name: 'tech',
-        choices: ['HTML', 'CSS', 'Javascript', 'jQuery', 'Node.js', 'AJAX', 'JSON']
+
     },
     {
         type: 'input',
@@ -112,11 +97,64 @@ inquirer
         type: 'input',
         name: 'email',
         message: 'What is your email address?'
-
+        
     },
 ]).then((answers)=> {
     const readmeContent =
     generateREADME(answers);
+
+    function renderLicenseBadge () {
+        switch(license.choices) {
+            case 'Apache':
+                data = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]';
+                break;
+            case 'GNU':
+                data = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]';
+                break;
+            case 'MIT':
+                data = 'https://opensource.org/licenses/MIT';
+                break;
+            case 'BSD':
+                data = '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]';
+                break;
+            case 'Unlicense':
+                data = '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]';
+                break;
+            default:
+                data = '';
+                break;   
+        }
+        return data
+    }
+    renderLicenseBadge();
+    
+    function renderLicenseLink () {
+        switch(license.choices) {
+            case 'Apache':
+                data = 'https://opensource.org/licenses/Apache-2.0';
+                break;
+            case 'GNU':
+                data = 'https://www.gnu.org/licenses/gpl-3.0';
+                break;
+            case 'MIT':
+                data = 'https://opensource.org/licenses/MIT';
+                break;
+            case 'BSD':
+                data = 'https://opensource.org/licenses/BSD-3-Clause';
+                break;
+            case 'Unlicense':
+                data = 'http://unlicense.org/';
+                break;
+            default:
+                data = '';
+                break;   
+        }
+        return data;
+    }
+    
+    renderLicenseLink();
+
+
 
     fs.writeFile('README.md', readmeContent, (err) => err ? console.log(err) : console.log('Successfully created README.md!'))
 })

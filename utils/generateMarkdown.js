@@ -48,7 +48,7 @@ function generateMarkdown(answers) {
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     let data;
-        switch(license.choices) {
+        switch(license) {
             case 'Apache':
                 data = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]';
                 break;

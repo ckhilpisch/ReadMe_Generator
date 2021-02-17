@@ -1,3 +1,49 @@
+function generateMarkdown(answers) {
+    `#  ${answers.appTitle}:
+    ##  
+    
+    ## Table of Contents:
+    <ol>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#testing">Testing</a></li>
+    <li><a href="#questions">Questions</a></li>
+    <li><a href="#license">License</a></li>
+    </ol>
+    
+    ## Description:
+    ${answers.descript}
+    
+    ## Installation:
+    ${answers.install}
+    
+    ## Usage: 
+    ${answers.usage}
+    
+    ## Contributing:
+    ${answers.cont}
+    
+    ## Testing:
+    ${answers.test} 
+    
+    ## Questions:
+    Have any questions about the app?  Check out my Github Site:
+    
+    www.github.com/${answers.github}
+    
+    Feel free to drop me a line:
+    <a class="link" href="mailto:${answers.email}">${answers.email}</a>
+    
+    ## License:
+    Distributed under the ${answers.license} license.
+    Full license information:
+    <p license></p>
+    `
+}
+
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -78,51 +124,7 @@ function renderLicenseLink(license) {
 // }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(answers) {
-    const generateMarkdown = (answers) =>
-    `#  ${answers.appTitle}:
-    ##  
-    
-    ## Table of Contents:
-    <ol>
-    <li><a href="#description">Description</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#testing">Testing</a></li>
-    <li><a href="#questions">Questions</a></li>
-    <li><a href="#license">License</a></li>
-    </ol>
-    
-    ## Description:
-    ${answers.descript}
-    
-    ## Installation:
-    ${answers.install}
-    
-    ## Usage: 
-    ${answers.usage}
-    
-    ## Contributing:
-    ${answers.cont}
-    
-    ## Testing:
-    ${answers.test} 
-    
-    ## Questions:
-    Have any questions about the app?  Check out my Github Site:
-    
-    www.github.com/${answers.github}
-    
-    Feel free to drop me a line:
-    <a class="link" href="mailto:${answers.email}">${answers.email}</a>
-    
-    ## License:
-    Distributed under the ${answers.license} license.
-    Full license information:
-    <p license></p>
-    `
-}
+
 
 
 module.exports = {

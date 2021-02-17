@@ -1,4 +1,4 @@
-#  a:
+#  The Thing:
 ##  
 
 ## Table of Contents:
@@ -13,27 +13,27 @@
 </ol>
 
 ## Description:
-a
+Things and things
 
 ## Installation:
-a
+put it on a website
 
 ## Usage: 
-a
+User can make things happen
 
 ## Contributing:
-a
+Contribution
 
 ## Testing:
-a 
+testing 
 
 ## Questions:
 Have any questions about the app?  Check out my Github Site:
 
-www.github.com/a
+www.github.com/ckhilpisch
 
 Feel free to drop me a line:
-<a class="link" href="mailto:a">a</a>
+<a class="link" href="mailto:ckhilpisch@gmail.com">ckhilpisch@gmail.com</a>
 
 ## License:
-Distributed under the Apache,GNU,MIT,BSD,Unlicense license.
+Distributed under the MIT license.

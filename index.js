@@ -1,6 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require("./assets/generateMarkdown");
+const { renderLicenseBadge, renderLicenseLink } = require('./assets/generateMarkdown');
 
+console.log(generateMarkdown.generateMarkdown);
+console.log(generateMarkdown.renderLicenseBadge);
+console.log(generateMarkdown.renderLicenseLink);
 // const generateREADME = (answers) =>
 // `#  ${answers.appTitle}:
 // ##  
@@ -100,8 +105,10 @@ inquirer
         
     },
 ]).then((answers)=> {
-    const readmeContent =
-    generateMarkdown(answers);
+    const readmeContent = answers;
+    generateMarkdown();
+    renderLicenseBadge();
+    renderLicenseLink();
 
     fs.writeFile('README.md', readmeContent, (err) => err ? console.log(err) : console.log('Successfully created README.md!'))
 })

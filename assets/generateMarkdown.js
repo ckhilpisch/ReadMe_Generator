@@ -31,7 +31,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
     let data;
-    switch(license.choices) {
+    switch(license) {
                 case 'Apache':
                     data = 'https://opensource.org/licenses/Apache-2.0';
                     break;
@@ -52,7 +52,7 @@ function renderLicenseLink(license) {
                     break;   
             }
             return data;
-            console.log(data);
+        
 }
 
 
@@ -122,7 +122,12 @@ function generateMarkdown(answers) {
     Full license information:
     <p license></p>
     `
-
-`;
 }
-module.exports = generateMarkdown;
+
+
+module.exports = {
+    renderLicenseLink,
+    renderLicenseBadge,
+    generateMarkdown,
+
+}

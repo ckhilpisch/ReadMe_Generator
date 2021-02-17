@@ -66,10 +66,14 @@ function promptUser () {
 
 async function init () {
     console.log ("Answer the following prompts to generate your README file");
+    try {
     const answers = await promptUser();
     const readmeContent = generateMarkdown(answers);
-
-    await fsWriteFile('README.md', readmeContent, (err) => err ? console.log(err) : console.log('Successfully created README.md!'))
+    await fsWriteFile('README.md', readmeContent)
+    console.log("your readme was successfully created");
+    } catch(err) {
+        console.log("ERROR");
+    }// 
 };
 
 init();

@@ -38,6 +38,8 @@ The user will open the command terminal inside the chosen coding platform.  The 
 ![Finished Photo](assets/Deployed1.png)
 ![Finished Photo2](assets/Deployed2.png)
 
+Here is a link to a walk through tutorial of the app:
+https://drive.google.com/file/d/11zVUKfvxbtjTVjHBwobkhXaOlid-9TMu/view?usp=sharing
 
 
 ## Contributing :

@@ -1,5 +1,5 @@
-#  A README generator:
-##  https://opensource.org/licenses/MIT
+#  ReadMe Generator:
+##  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
     
 ## Table of Contents:
 <ol>
@@ -13,16 +13,16 @@
 </ol>
 
 ## Description:
-The application generates a README.md file by taking in user information
+Takes info from User and then uses it to write a professional README.md for the user
 
 ## Installation:
-Run the application in the terminal in bash using node index.js
+run in bash by typing in node index.js
 
 ## Usage: 
-It is used to help programmers create their own professional README
+The user goes in to the command line and is then prompted with some question.   The answers supplied are then used to dynamically create a README
 
 ## Contributing:
-Email for infomration
+Email me fopr contribution guidlines.   Git pulls are always welcome!
 
 ## Testing:
 n/a 

@@ -20,6 +20,10 @@ Here are the accepatance criteria given:
 
 ## Installation :
 The application can be run in the termianl inside of your chosen coding application. It uses Javascript and Node as the languages to access it. 
+The user must make sure to use the following code so that the inquirer is available to them:
+```bash
+npm i
+```
 The application is invoked by using the following command:
 ```bash
 node index.js

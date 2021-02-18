@@ -27,6 +27,11 @@ node index.js
 
 ## Usage : 
 The user will open the project inside the chose coding platform.  The user will then run node index.js inside the command line.   After running that code, the user is prompted with questions about the project done.   After answering these questions, the user then will have a professional README created that they can use.
+![In Use](./assets/read1.gif)
+![In Use2](./assets/read2.gif)
+![In Use3](./assets/read3.gif)
+
+
 
 
 ## Contributing :

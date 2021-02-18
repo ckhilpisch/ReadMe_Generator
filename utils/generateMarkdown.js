@@ -13,7 +13,7 @@ function generateMarkdown(answers) {
           "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)";
         break;
       case "MIT":
-        badge = "https://opensource.org/licenses/MIT";
+        badge = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
         break;
       case "BSD":
         badge =

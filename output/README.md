@@ -1,4 +1,4 @@
-#  ReadMe Generator:
+#  README Generator:
 ##  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
     
 ## Table of Contents:
@@ -13,16 +13,16 @@
 </ol>
 
 ## Description:
-Takes info from User and then uses it to write a professional README.md for the user
+The application takes information from a user and creates a professional README for the user to use on Github
 
 ## Installation:
-run in bash by typing in node index.js
+Install Inquirer in the Terminal by using 'npm i inquirer'.  The go to the termail and run node on the index.js
 
 ## Usage: 
-The user goes in to the command line and is then prompted with some question.   The answers supplied are then used to dynamically create a README
+The user provides information about the application created.   That information is then dynamically pushed to a README page that is placed in the output folder
 
 ## Contributing:
-Email me fopr contribution guidlines.   Git pulls are always welcome!
+Email me to make changes.  Forks on Github are always welcome.
 
 ## Testing:
 n/a 

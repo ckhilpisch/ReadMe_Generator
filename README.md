@@ -1,7 +1,7 @@
 ## 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-# README.md Generator
+# <div align="center">README.md Generator</div>
 
 ## <div align="center"> **Table of Contents** :</div>
 
